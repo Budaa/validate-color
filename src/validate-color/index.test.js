@@ -152,6 +152,10 @@ const validateHTMLColorRgbValidRgba = [
   "rgba(0, 0, 0,  .4)",
   "rgba(100%, 100%, 100%, 1)",
   "rgba(100,100,100,0)",
+  "rgba(100,100,100,0.0)",
+  "rgba(100,100,100,0.00)",
+  "rgba(100,100,100,1.0)",
+  "rgba(100,100,100,1.00)",
 ];
 // -- Color HSL
 const validateHTMLColorHslInvalid = [
