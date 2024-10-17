@@ -231,7 +231,7 @@ export const validateHTMLColorRgb = (color) => {
     const R = `${letter}${gap}`;
     const G = `${letter}${gap}`;
     const B = `${letter}${gap}`;
-    const A = `(\\/?${spaceNoneOrMore}(0?\\.?${digitOneOrMore}%?${spaceNoneOrMore})?|1|0)`;
+    const A = `(\\/?${spaceNoneOrMore}(0?\\.?${digitOneOrMore}(%)?|1(\\.0+)?|0)${spaceNoneOrMore})?`;
     const regexLogic = `^(rgb)a?\\(${R}${G}${B}(${A})?\\)$`
     const regex = new RegExp(regexLogic);
     debugRegex && console.log('regex (rgb)', regex);
